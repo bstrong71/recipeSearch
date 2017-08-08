@@ -15,12 +15,12 @@ button.addEventListener("click", function(){
       }
       response.json().then(function(data){
 
-        for (var i = 0; i < data.results.length; i++) {
+        for (var i = 0; i < 8; i++) {
           let recipe = document.createElement("div");
           if(data.results[i].thumbnail === ""){
             recipe.innerHTML += `
               <h5>${data.results[i].title}</h5>
-              <img src="http://via.placeholder.com/200x200">
+              <img src="https://s-media-cache-ak0.pinimg.com/736x/2b/60/b7/2b60b75c366d21b5f45b949f0faece99--funny-cats-funny-animals.jpg">
               <a href="${data.results[i].href}"></a>
             `;
           } else {
