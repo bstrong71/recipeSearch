@@ -1,0 +1,31 @@
+#wrapper{
+  background-color: #f3f3f3;
+  height: 90%;
+  padding: 80px;
+}
+
+#searchBar{
+  border-bottom: 1px solid black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.6s ease-in-out;
+}
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 100%;
+}
+
+#searchResult{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#searchResult div{
+  flex: 1 1 25%;
+
+}
